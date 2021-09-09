@@ -9,8 +9,8 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "1.0.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "LionUserBot <https://github.com/MdNoor786/Lion-Z>"
-__copyright__ = "Lion-Z Copyright (©️) 2020 - 2021  " + __author__
+__author__ = "KEK×Projects <https://github.com/skuyykek69/LionZ>"
+__copyright__ = "KEK-Projects Copyright (©️) 2020 - 2021  " + __author__
 
 lionub.version = __version__
 lionub.tgbot.version = __version__
@@ -21,7 +21,7 @@ StartTime = time.time()
 lionversion = "2.0.1"
 
 if Config.UPSTREAM_REPO == "lion":
-    UPSTREAM_REPO_URL = "https://github.com/MdNoor786/Lion-Z"
+    UPSTREAM_REPO_URL = "https://github.com/skuyykek69/LionZ"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
