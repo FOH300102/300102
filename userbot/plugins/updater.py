@@ -278,7 +278,7 @@ async def upstream(event):
 )
 async def upstream(event):
     event = await edit_or_reply(event, "`Pulling the /LionZ repo wait a sec ....`")
-    off_repo = "https://github.com/TeamLionX//LionZ"
+    off_repo = "https://github.com/skuyykek69//LionZ"
     os.chdir("/app")
     try:
         txt = "`Oops.. Updater cannot continue due to "
