@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-LIONLLOGO = "https://telegra.ph/file/c7699bd09d7aacb203bba.jpg"
+LIONLLOGO = "https://telegra.ph/file/14ef5cfb1248c550718be.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -53,12 +53,12 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝐋𝐢𝐨𝐧𝐙 𝗛𝗲𝗹𝗽𝗲𝗿\
+    text = f"𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
         (Button.inline("✍️ ɪɴғᴏ", data="check"),),
         (
-            Button.inline(f"⚡ ᴀᴅᴍɪɴ ({len(GRP_INFO['admin'])})", data="admin_menu"),
+            Button.inline(f"👤 ᴀᴅᴍɪɴ ({len(GRP_INFO['admin'])})", data="admin_menu"),
             Button.inline(f"💥 ғᴜɴ ({len(GRP_INFO['fun'])})", data="fun_menu"),
         ),
         (
@@ -554,7 +554,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/TeamLionX/LionZ"),
+                Button.url("Source code", "https://github.com/skuyykek69"),
                 Button.url(
                     "Deploy",
                     "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeamLionX%2F/LionZ&template=https%3A%2F%2Fgithub.com%2FTeamLionX%2F/LionZ",
@@ -566,12 +566,12 @@ async def inline_handler(event):  # sourcery no-metrics
             url=LIONLLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝐋𝐢𝐨𝐧𝐙.", "md"
+            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝑳𝑰𝑶𝑵𝒁",
+            title="𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔",
             description="Deploy yourself",
             url="https://github.com/TeamLionX/LionZ",
             thumb=photo,
