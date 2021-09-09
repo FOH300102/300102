@@ -49,7 +49,7 @@ def sun(unix, ctimezone):
     command=("climate", plugin_category),
     info={
         "header": "To get the weather report of a city.",
-        "description": "Shows you the weather report of a city. By default it is Delhi, you can change it by {tr}setcity command.",
+        "description": "Shows you the weather report of a city. By default it is Indonesia, you can change it by {tr}setcity command.",
         "note": "For functioning of this plugin you need to set OPEN_WEATHER_MAP_APPID var you can  get value from https://openweathermap.org/",
         "usage": [
             "{tr}climate",
