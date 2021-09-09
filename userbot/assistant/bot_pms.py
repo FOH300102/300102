@@ -107,11 +107,7 @@ async def bot_start(event):
                         \nI am {my_mention}'s assistant bot.\
                         \nYou can contact to my master from here.\
                         \n\nPowered by [𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔](https://t.me/Skuyykek69)"
-        buttons = [
-            (
-                Button.url("Repo", "https://github.com/skuyykek69"),
-            )
-        ]
+        buttons = [(Button.url("Repo", "https://github.com/skuyykek69"),)]
     else:
         start_msg = "Hey Master!\
             \nHow can i help you ?"
