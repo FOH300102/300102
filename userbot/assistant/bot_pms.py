@@ -106,14 +106,10 @@ async def bot_start(event):
             start_msg = f"Hey! 👤{mention},\
                         \nI am {my_mention}'s assistant bot.\
                         \nYou can contact to my master from here.\
-                        \n\nPowered by [Lionuserbot](https://t.me/LionZ)"
+                        \n\nPowered by [𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔](https://t.me/Skuyykek69)"
         buttons = [
             (
-                Button.url("Repo", "https://github.com/TeamLionX/LionZ"),
-                Button.url(
-                    "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeamLionX%2F/LionZ&template=https%3A%2F%2Fgithub.com%2FTeamLionX%2F/LionZ",
-                ),
+                Button.url("Repo", "https://github.com/skuyykek69"),
             )
         ]
     else:
