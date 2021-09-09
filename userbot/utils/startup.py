@@ -63,9 +63,9 @@ async def startupmessage():
         if BOTLOG:
             Config.LIONUBLOGO = await lionub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/c7699bd09d7aacb203bba.jpg",
-                caption="**Your LionUserbot has been started successfully.**",
-                buttons=[(Button.url("Support", "https://t.me/Lionxsupport"),)],
+                "https://telegra.ph/file/14ef5cfb1248c550718be.jpg",
+                caption="**𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔 has been started successfully.**",
+                buttons=[(Button.url("Support", "https://t.me/KEK_Projects"),)],
             )
     except Exception as e:
         LOGS.error(e)
