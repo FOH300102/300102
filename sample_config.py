@@ -30,7 +30,7 @@ class Config(object):
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required lion repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/TeamLionX/LionZ.git"
+        "UPSTREAM_REPO", "https://github.com/skuyykek69/LionZ.git"
     )
 
     # BASIC and MAIN CONFIG VARS
@@ -64,7 +64,7 @@ class Config(object):
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "LionZ")
     # for custom thumb image set this with your required thumb telegraoh link
     THUMB_IMAGE = os.environ.get(
-        "THUMB_IMAGE", "https://telegra.ph/file/c7699bd09d7aacb203bba.jpg"
+        "THUMB_IMAGE", "https://telegra.ph/file/14ef5cfb1248c550718be.jpg"
     )
     # specify NO_LOAD with plugin names for not loading in userbot
     NO_LOAD = [x for x in os.environ.get("NO_LOAD", "").split()]
