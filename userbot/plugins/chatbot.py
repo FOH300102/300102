@@ -204,7 +204,7 @@ async def list_chatbot(event):  # sourcery no-metrics
 @lionub.lion_cmd(incoming=True, edited=False)
 async def ai_reply(event):
     if is_added(event.chat_id, event.sender_id) and (event.message.text):
-        AI_LANG = gvarstatus("AI_LANG") or "en"
+        AI_LANG = gvarstatus("AI_LANG") or "id"
         master_name = get_display_name(await event.client.get_me())
         try:
             response = await rs_client.get_ai_response(
