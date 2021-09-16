@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-LIONLLOGO = "https://telegra.ph/file/14ef5cfb1248c550718be.jpg"
+LIONLOGO = "https://telegra.ph/file/da9c3139fb593bc1f4d24.png"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -56,18 +56,18 @@ def main_menu():
     text = f"𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨 𝙄𝙣𝙡𝙞𝙣𝙚 𝙃𝙚𝙡𝙥𝙚𝙧\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
-        (Button.inline("✍️ ɪɴғᴏ", data="check"),),
+        (Button.inline("ɪɴғᴏ", data="check"),),
         (
-            Button.inline(f"👤 ᴀᴅᴍɪɴ ({len(GRP_INFO['admin'])})", data="admin_menu"),
-            Button.inline(f"💥 ғᴜɴ ({len(GRP_INFO['fun'])})", data="fun_menu"),
+            Button.inline(f"ᴀᴅᴍɪɴ ({len(GRP_INFO['admin'])})", data="admin_menu"),
+            Button.inline(f"ғᴜɴ ({len(GRP_INFO['fun'])})", data="fun_menu"),
         ),
         (
-            Button.inline(f"✒️ ᴍɪsᴄ ({len(GRP_INFO['misc'])})", data="misc_menu"),
-            Button.inline(f"🧰 ᴛᴏᴏʟs ({len(GRP_INFO['tools'])})", data="tools_menu"),
+            Button.inline(f"ᴍɪsᴄ ({len(GRP_INFO['misc'])})", data="misc_menu"),
+            Button.inline(f"ᴛᴏᴏʟs ({len(GRP_INFO['tools'])})", data="tools_menu"),
         ),
         (
-            Button.inline(f"💎 ᴜᴛɪʟs ({len(GRP_INFO['utils'])})", data="utils_menu"),
-            Button.inline(f"🖍️ ᴇxᴛʀᴀ ({len(GRP_INFO['extra'])})", data="extra_menu"),
+            Button.inline(f"ᴜᴛɪʟs ({len(GRP_INFO['utils'])})", data="utils_menu"),
+            Button.inline(f"ᴇxᴛʀᴀ ({len(GRP_INFO['extra'])})", data="extra_menu"),
         ),
         (Button.inline("🔐 ᴄʟᴏsᴇ", data="close"),),
     ]
