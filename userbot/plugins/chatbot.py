@@ -6,9 +6,9 @@ from googletrans import Translator
 from telethon import events
 from telethon.tl.types import User
 
-from userbot import CMD_HELP, LOGS, bot
-from userbot.utils.decorators import register
+from userbot import LOGS, bot
 from userbot.funcs import edit_or_reply
+from userbot.utils.decorators import register
 
 translator = Translator()
 LANGUAGE = "id"
