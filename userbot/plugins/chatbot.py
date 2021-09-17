@@ -66,3 +66,12 @@ async def tede_chatbot(event):
         tr = translator.translate(rep, LANGUAGE)
         if tr:
             await event.reply(tr.text)
+
+CMD_HELP.update(
+    {
+        "chatbot": "**Plugin : **`chatbot`\
+      \n\n  •  **Syntax :** `.chatbot` <on/off>\
+      \n  •  **Function :** Ya chatbot\
+      "
+    }
+)
