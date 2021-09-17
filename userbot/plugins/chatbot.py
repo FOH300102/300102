@@ -67,6 +67,7 @@ async def tede_chatbot(event):
         if tr:
             await event.reply(tr.text)
 
+
 CMD_HELP.update(
     {
         "chatbot": "**Plugin : **`chatbot`\
