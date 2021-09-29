@@ -160,13 +160,13 @@ def paginate_help(
                 modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
             ] + [
                 (
-                    Button.inline("🔻", data=f"{prefix}_prev({modulo_page})_plugin"),
-                    Button.inline("🔸 Menu", data="mainmenu"),
-                    Button.inline("🔺", data=f"{prefix}_next({modulo_page})_plugin"),
+                    Button.inline("»", data=f"{prefix}_prev({modulo_page})_plugin"),
+                    Button.inline("🔸Menu🔸", data="mainmenu"),
+                    Button.inline("«", data=f"{prefix}_next({modulo_page})_plugin"),
                 )
             ]
         else:
-            pairs = pairs + [(Button.inline("🔸 Menu", data="mainmenu"),)]
+            pairs = pairs + [(Button.inline("🔸Menu🔸", data="mainmenu"),)]
     elif len(pairs) > number_of_rows:
         if category_pgno < 0:
             category_pgno = len(pairs) + category_pgno
@@ -175,7 +175,7 @@ def paginate_help(
         ] + [
             (
                 Button.inline(
-                    "🔻",
+                    "«",
                     data=f"{prefix}_prev({modulo_page})_command_{category_plugins}_{category_pgno}",
                 ),
                 Button.inline(
@@ -183,7 +183,7 @@ def paginate_help(
                     data=f"back_plugin_{category_plugins}_{category_pgno}",
                 ),
                 Button.inline(
-                    "🔺",
+                    "»",
                     data=f"{prefix}_next({modulo_page})_command_{category_plugins}_{category_pgno}",
                 ),
             )
@@ -417,8 +417,8 @@ async def inline_handler(event):  # sourcery no-metrics
         elif string == "help":
             _result = main_menu()
             result = builder.article(
-                title="© LionZ Help",
-                description="Help menu for LionZ",
+                title="© kekXBot Help",
+                description="Help menu for kekXBot",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -587,7 +587,7 @@ async def inline_handler(event):  # sourcery no-metrics
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [
-        (Button.inline("ʀᴇ-ᴏᴘᴇɴ", data="mainmenu"),),
+        (Button.inline("» ʀᴇ-ᴏᴘᴇɴ «", data="mainmenu"),),
     ]
     await event.edit("ᴍᴇɴᴜ ᴄʟᴏsᴇᴅ", buttons=buttons)
 
@@ -730,7 +730,7 @@ async def on_plug_in_callback_query_handler(event):
                 "🔙",
                 data=f"back_command_{category}_{pgno}_{category_plugins}_{category_pgno}",
             ),
-            Button.inline("🔸ᴍᴇɴᴜ", data="mainmenu"),
+            Button.inline("🔸ᴍᴇɴᴜ🔸", data="mainmenu"),
         )
     ]
     text = f"**Command :** `{tr}{cmd}`\
