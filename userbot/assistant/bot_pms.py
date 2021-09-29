@@ -103,11 +103,11 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"Hey! 👤{mention},\
+            start_msg = f"Hi Bastard! 👤{mention},\
                         \nI am {my_mention}'s assistant bot.\
                         \nYou can contact to my master from here.\
-                        \n\nPowered by [𝑲𝑬𝑲×𝑷𝒓𝒐𝒋𝒆𝒄𝒕𝒔](https://t.me/Skuyykek69)"
-        buttons = [(Button.url("Repo", "https://github.com/skuyykek69"),)]
+                        \n\nPowered by [𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨](https://t.me/KEK_Projects)"
+        buttons = [(Button.url("Github", "https://github.com/skuyykek69"),)]
     else:
         start_msg = "Hey Master!\
             \nHow can i help you ?"
