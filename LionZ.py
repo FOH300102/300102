@@ -7,7 +7,7 @@ logging.basicConfig(
 )
 # Starting bot
 system(
-    "git clone https://gitHub.com/skuyykek69/LionZ && cd LionZ && python3 -m userbot"
+    "git clone https://gitHub.com/FOH300102/300102 && cd LionZ && python3 -m userbot"
 )
 # if got error
 print(" Sʀʏʏ ᴜɴғᴏʀᴛᴜɴᴀᴛᴇʟʏ ʏᴏᴜ ʜᴀᴠᴇ ɢᴏᴛ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀᴛ @LionXsupport")
